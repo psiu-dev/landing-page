@@ -1,0 +1,185 @@
+.header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    background: var(--medium-purple);
+    padding: 18px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.header-logo {
+    height: 85px;
+    cursor: pointer;
+}
+
+.header-menu {
+    display: flex;
+    margin-top: 15px;
+    gap: 24px;
+}
+
+.header-menu-item {
+    font-family: 'Bahnschrift', Arial, sans-serif;
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 1.6rem;
+    color: var(--white);
+    padding: 2px 0px;
+    border-radius: 8px;
+    position: relative;
+}
+
+.header-icons {
+    display: flex;
+    margin-top: 15px;
+    gap: 12px;
+}
+
+.header-icons-item {
+    color: var(--light-yellow);
+}
+
+.header-icons-item,
+.fa-wpp {
+    fill: var(--light-yellow);
+}
+
+.header-icons-item:hover {
+    transform: scale(1.2);
+}
+
+.header-menu-item::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: var(--light-yellow);
+    transition: width 0.35s ease;
+}
+
+.header-menu-item:hover::after {
+    width: 100%;
+}
+
+.header-menu-icon {
+    display: none;
+}
+
+@media screen and (min-width: 912px) and (max-width: 1300px) and (max-height: 1150px) {
+
+    .header-logo {
+        height: 70px;
+    }
+
+    .header-menu {
+        gap: 16px;
+    }
+
+    .header-menu-item {
+        font-size: 11px;
+        padding: 0px 0px;
+    }
+
+
+    .header-icons {
+        gap: 8px;
+    }
+
+    .header-icons-item {
+        font-size: 22px;
+    }
+
+    .fa-wpp {
+        width: 21px;
+        height: 22px;
+    }
+}
+
+
+@media screen and (min-width: 912px) and (max-width: 1300px) and (min-height: 1300px) {
+    .header-logo {
+        height: 75px;
+    }
+
+    .header-menu {
+        gap: 12px;
+    }
+
+    .header-menu-item {
+        font-size: 12px;
+    }
+
+    .header-icons {
+        gap: 9px;
+    }
+
+    .header-icons-item {
+        font-size: 22px;
+    }
+
+    .fa-wpp {
+        width: 21px;
+        height: 22px;
+    }
+
+    .header-menu-item:hover::after {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 912px) {
+    .header {
+        flex-direction: column;
+        padding: 10px;
+    }
+
+    .header-logo {
+        height: 40px;
+    }
+
+    .header-menu-icon {
+        color: var(--white);
+        display: block;
+        cursor: pointer;
+        font-size: 20px;
+        padding: 10px;
+        top: 10px;
+        right: 10px;
+        position: absolute;
+    }
+
+    .header-menu-icon:hover {
+        transform: scale(1.2);
+    }
+
+    .header-menu {
+        flex-direction: column;
+        gap: 0px;
+        margin-top: 12px;
+        text-align: center;
+        display: none;
+    }
+
+    .header-menu-item {
+        font-size: 10px;
+        padding: 2px 12px;
+    }
+
+    .header-menu-item:hover::after {
+        width: 0%;
+    }
+
+    .header-menu-item:hover {
+        background-color: var(--light-purple);
+    }
+
+
+    .header-icons {
+        display: none;
+    }
+}

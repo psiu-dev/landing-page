@@ -1,0 +1,44 @@
+.footer {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    background: var(--medium-purple);
+    padding: 24px;
+}
+
+.footer-logo,
+.footer-logo-partner {
+    height: 85px;
+}
+
+.footer-contact {
+    font-size: 20px;
+    font-style: normal;
+    text-align: center;
+}
+
+.footer-contact img {
+    height: 32px;
+}
+
+@media screen and (max-width: 912px) {
+    .footer {
+        flex-direction: column;
+        gap: 15px;
+        padding: 15px;
+    }
+
+    .footer-logo,
+    .footer-logo-partner {
+        height: 60px;
+    }
+
+    .footer-contact img {
+        height: 30px;
+    }
+
+    .footer-contact {
+        font-size: 18px;
+    }
+}

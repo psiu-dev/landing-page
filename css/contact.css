@@ -1,0 +1,210 @@
+.contact {
+    display: flex;
+    flex-direction: column;
+    background: var(--light-teal);
+    justify-content: center;
+    font-family:  'Bahnschrift', Arial, sans-serif;;
+    align-items: center;
+    height: 100vh;
+    padding: 15px;
+    color: var(--white);
+    position: relative;
+}
+
+.contact-woman-image {
+    transform: scaleX(-1);
+    width: 480px;
+}
+
+.contact-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 35px;
+    margin-bottom: 55px;
+}
+
+.contact-wpp-icon {
+    fill: #eff0d8;
+    padding-left: 10px;
+    transition: transform 0.3s ease;
+}
+
+.contact-wpp-icon:hover {
+    transform: scale(1.2);
+    fill: #D9DBC2;
+}
+
+.contact-title:hover, .contact-phone:hover {
+    color: #D9DBC2;
+}
+
+.contact-title {
+    font-size: 48px;
+    color: #eff0d8;
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    overflow-wrap: break-word;
+    max-width: 800px;
+}
+
+.contact-phone {
+    font-size: 48px;
+    color: #eff0d8;
+}
+
+.contact-paragraph {
+    font-size: 21px;
+    font-weight: 600;
+    line-height: 1.5;
+    padding: 0px 15px;
+}
+
+.contact-image-down {
+    position: absolute;
+    bottom: 7.5px; 
+    left: 50%; 
+    transform: translateX(-50%); 
+}
+
+.contact-image-down:hover {
+    background: rgba(211, 211, 211, 0.6);
+    padding: 0px 7.5px;
+    border-radius: 50%;
+}
+
+
+@media screen and (min-width: 912px) and (max-width: 1700px) and (max-height: 1150px) {
+
+  @media screen and (min-height: 560px) {
+    .contact-woman-image {
+        width: 336px;
+    }
+    
+    .contact-title {
+        font-size: 32px;
+    }
+    
+    .contact-phone {
+        font-size: 32px;
+    }
+    
+    .contact-wpp-icon {
+        width: 116px;
+        height: 78px;
+    }
+
+    .contact-image-down {
+        transform: translateX(-50%) scale(0.5); 
+        bottom: -20px;
+    }
+
+    .contact-paragraph {
+        font-size: 18px;
+    }
+  }
+
+  @media screen and (max-height: 560px) {
+    .contact-woman-image {
+        width: 200px;
+    }
+    
+    .contact-title {
+        font-size: 26px;
+    }
+    
+    .contact-phone {
+        font-size: 26px;
+    }
+    
+    .contact-wpp-icon {
+        width: 70px;
+        height: 46px;
+    }
+
+    .contact-image-down {
+        transform: translateX(-50%) scale(0.4); 
+        bottom: -20px;
+    }
+
+    .contact-paragraph {
+        font-size: 12px;
+    }
+  }
+
+
+}
+
+@media screen  and (max-width: 912px) {    
+    .contact {
+        padding: 20px 10px;
+        height: auto;
+    }
+
+    .contact-woman-image {
+        display: none;
+    }
+
+    .contact-info {
+        align-items: center;
+    }
+
+    .contact-wpp-icon {
+        width: 132px;
+        height: 88px;
+    }
+
+    .contact-title, .contact-phone {
+        font-size: 32px;
+    }
+
+    .contact-content {
+        flex-direction: column;
+        gap: 20px;
+        text-align: center;
+    }
+
+    .contact-paragraph {
+        font-size: 16px;
+    }
+
+    .contact-image-down {
+        position: absolute;
+        bottom: -20px;
+        left: 50%;
+        transform: translateX(-50%) scale(0.5); 
+        transform-origin: center; 
+    }
+
+    .contact-image-down:hover {
+        background: rgba(211, 211, 211, 0.6);
+        padding: 0px 7.5px;
+        border-radius: 50%;
+    }
+
+    @media screen and (min-width: 768px ) {
+        .contact-paragraph {
+            width: 85%;
+        }
+    }    
+    @media screen and (max-width: 360px) {
+        .contact-wpp-icon {
+            width: 104px;
+            height: 75px;
+        }
+
+        .contact-paragraph {
+            font-size: 12px;
+        }
+
+        .contact-title, .contact-phone {
+            font-size: 26px;
+        }
+    }
+        
+}

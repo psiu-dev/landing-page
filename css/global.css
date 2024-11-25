@@ -1,0 +1,28 @@
+:root {
+    --light-purple: #8d89b0;
+    --medium-purple: #716c9d;
+    --dark-purple: #4b3070;
+    --light-yellow: #f0f1ca;
+    --light-teal: #85b3b9;
+    --white: #ffffff;
+    --medium-gray: #7a7a7a;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+}
+
+html {
+    scroll-behavior: smooth; 
+}
+
+body {
+    font-size: 100%;
+}
+
+
+
+
