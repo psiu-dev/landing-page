@@ -23,5 +23,5 @@ jobs:
 
       - name: Deploy files
         run: |
-          scp -r ./* ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:/home/garimpytec/gh-action
+          scp -r ./* ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }}:/var/www/html/landing-page
           ssh ${{ secrets.DEPLOY_USER }}@${{ secrets.DEPLOY_HOST }} "sudo systemctl restart nginx"
