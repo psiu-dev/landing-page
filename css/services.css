@@ -53,11 +53,12 @@
 }
 
 .services-pdf-image {
+    opacity: 0.40;
     width: 112px;
 }
 
 .services-pdf-image:hover {
-    transform: scale(1.2);
+    cursor: not-allowed;
 }
 
 .services-image-down {

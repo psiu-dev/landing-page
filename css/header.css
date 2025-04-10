@@ -8,10 +8,6 @@
     padding: 18px;
     width: 100%;
     overflow: hidden;
-
-    position: sticky;
-    z-index: 1;
-    top: 0;
 }
 
 .header-logo {
