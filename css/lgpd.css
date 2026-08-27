@@ -1,0 +1,33 @@
+@import url("global.css");
+@import url("header.css");
+@import url("footer.css");
+
+.lgpd {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 64px 24px;
+    background: var(--white);
+    min-height: 60vh;
+}
+
+.lgpd-content {
+    max-width: 860px;
+    width: 100%;
+}
+
+.lgpd-title {
+    color: var(--dark-purple);
+    font-size: 2rem;
+    text-align: center;
+    margin-bottom: 32px;
+}
+
+.lgpd-paragraph {
+    color: var(--medium-gray);
+    font-size: 1.1rem;
+    line-height: 1.8;
+    text-align: justify;
+    margin-bottom: 24px;
+}

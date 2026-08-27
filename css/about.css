@@ -1,7 +1,7 @@
 .about {
     display: flex;
     flex-direction: column;
-    font-family:  'Bahnschrift', Arial, sans-serif;;
+    font-family:  'Fira Sans', sans-serif;
     background: var(--light-yellow);
     justify-content: center;
     height: 100vh;
@@ -27,7 +27,7 @@
 
 .about-title {
     color: var(--dark-purple);
-    font-weight: bolder;
+    font-weight: bold;
     font-size: 48px;
 }
 

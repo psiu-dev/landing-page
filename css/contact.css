@@ -3,7 +3,7 @@
     flex-direction: column;
     background: var(--light-teal);
     justify-content: center;
-    font-family:  'Bahnschrift', Arial, sans-serif;;
+    font-family:  'Fira Sans', sans-serif;
     align-items: center;
     height: 100vh;
     padding: 15px;
