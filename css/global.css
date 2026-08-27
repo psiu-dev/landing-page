@@ -16,11 +16,12 @@
 }
 
 html {
-    scroll-behavior: smooth; 
+    scroll-behavior: smooth;
 }
 
 body {
     font-size: 100%;
+    font-family: 'Fira Sans', sans-serif;
 }
 
 
